@@ -1,0 +1,349 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navbar .logo {
+    font-size: 2.0rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+    
+      position: absolute;
+      top: 60px;
+      right: 0;
+      height: calc(100vh - 60px);
+      background-color: #333;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.3s;
+    }
+  
+    .nav-links.open {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+
+ /* Features Component Styling */
+
+.features h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.featuresContainer {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featuresContainer p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+  /* Services */
+
+ 
+#features, #services {
+  background-color: #f4f4f4; /* Light background for contrast */
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+
+#services h4 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+#services ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align list items to the left */
+}
+
+#services ul li {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for list items */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+#services ul li .bold {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Shared Section Styles for Features, Services, and Form */
+#features, #services, .pricing {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Pricing Section */
+.pricing h5 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+.pricingForm {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Pricing List Styling */
+.formUl {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.formUl li {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* New Form Styling */
+.serviceForm {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Input Fields */
+.inputs  {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Form Submit Button */
+.submitBtn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #ff3b2f;
+}
+
+  
+
+  /* About Section */
+#about {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Responsive Layout for Desktop */
+@media (min-width: 768px) {
+  .aboutContainer {
+      flex-direction: row;
+      text-align: left;
+  }
+}
+
+/* About Image Styling */
+.aboutImg {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutImg:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* About Text */
+.aboutP {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+#aboutHeading {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+/* Contact Info Styling */
+#contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+/* Contact Icons */
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: scale(1.05);
+}
+
+/* Icons Styling */
+.contactIcon {
+  font-size: 1.5rem;
+  color: #ff6f61;
+}
+
+/* Footer Text */
+#contactInfo p {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
